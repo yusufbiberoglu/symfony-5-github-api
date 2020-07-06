@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class GithubController extends AbstractController
 {
     /**
-     * @Route("/{username}", name="github", defaults={"username": "username"})
+     * @Route("/{username}", name="github", defaults={"username": "yusufbiberoglu"})
      */
     public function github($username)
     {

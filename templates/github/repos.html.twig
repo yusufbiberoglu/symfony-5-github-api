@@ -19,7 +19,13 @@
 
             <ul class="list-group">
                 {% for repo in repos %}
-                    <li class="list-group-item">{% include 'github:repo.html.twig' with repo %}</li>
+                    <a href="{{ repo.url }}">{{ repo.name }}</a>
+                    <br />
+                    <span class="small">{{ repo.description }}</span>
+                    <span class="pull-right">
+    {{ repo.stargazers_count }} <i class="glyphicon glyphicon-star"></i>
+    </span>
+
                 {% endfor %}
             </ul>
         </div>
